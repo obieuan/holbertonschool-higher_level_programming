@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 """
-	Class for defining a rectangle
+    Class for defining a rectangle
 """
 
 
 class Rectangle:
 
 
-	"""Defines a rectangle"""
+    """Defines a rectangle"""
 pass
