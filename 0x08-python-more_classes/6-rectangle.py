@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+
+
 """
      Class for defining a rectangle
 """
@@ -72,3 +74,4 @@ class Rectangle:
         """Prints msg when instance of Rectangle is deleted"""
         print("Bye rectangle...")
         type(self).number_of_instances -= 1
+
