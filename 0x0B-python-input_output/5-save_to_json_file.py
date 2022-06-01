@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-import json
-
-
 """
 save_to_json_file function module.
 Define save_to_json_file function.
 """
+
+import json
 
 
 def save_to_json_file(my_obj, filename):
