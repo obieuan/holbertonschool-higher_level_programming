@@ -13,4 +13,4 @@ try:
 except:
     pass
 savejson(oldlist + sys.argv[1:], "add_item.json")
-print(oldlist + sys.argv[1:])
+
