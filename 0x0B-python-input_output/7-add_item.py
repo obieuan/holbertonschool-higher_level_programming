@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-add arguments to a list and 
-save to file
+ un script que agrega todos los argumentos a una lista,
+ y los guarda en un archivo
 """
 
 
