@@ -1,13 +1,15 @@
 #!/usr/bin/python3
 """
-number_of_lines function module.
-Define number_of_lines function.
+write_file function module.
+Define write_file function.
 """
 
 
-def number_of_lines(filename=""):
-    """Returns the number of lines of a text file (UTF8).
-    filename (file): the file, must exist, must have permissions
+def write_file(filename="", text=""):
+    """Writes a string to a text file (UTF8).
+    filename (str): the file, must have permissions, will create if nonexist.
+    text (str): text, will overwrite content of file if already exists.
+    Returns: the number of characters written.
     """
-    with open(filename, encoding="UTF-8") as myfile:
-        return len(myfile.readlines())
+    with open(filename, 'w', encoding="UTF-8") as myfile:
+        return myfile.write(text)
