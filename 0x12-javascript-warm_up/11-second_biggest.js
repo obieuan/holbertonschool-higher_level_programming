@@ -1,9 +1,8 @@
 #!/usr/bin/node
 'use strict';
-let nextMax = 0;
-const args = process.argv.slice(2);
-if (args.length > 1) {
-  args.sort();
-  nextMax = args[args.length - 2];
+if (process.argv.length <= 3) {
+  console.log(0);
+} else {
+  const list = process.argv.sort();
+  console.log(list.reverse()[1]);
 }
-console.log(nextMax);
