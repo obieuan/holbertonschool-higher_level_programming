@@ -1,21 +1,22 @@
 #!/usr/bin/python3
 """Check status"""
 import requests
+from requests.auth import HTTPBasicAuth
 import sys
 
 
 def searchapi():
     """status"""
-    result = requests.get("https://swapi.co/api/people",
-                          params={"search": sys.argv[1]})
+    user = str(sys.argv[1])
+    pw = str(sys.argv[2])
+    result = requests.get("https://api.github.com/user",
+                          auth=(HTTPBasicAuth(user, pw)))
 
     try:
         data = result.json()
-        print("Number of results: {}".format(data["count"]))
-        for i in data["results"]:
-            print(i["name"])
+        print(data["id"])
     except:
-        print("Not a valid JSON")
+        print("None")
 
 if __name__ == "__main__":
     searchapi()
